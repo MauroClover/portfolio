@@ -29,14 +29,19 @@ body {
   background-color: white;
 }
 
-a:hover {
-  background-color: blue;
+.a_hover:hover {
   border-radius: 15px;
+  background-color: blue;
 }
 
-i {
+.i {
   font-size: 30px;
   color: aliceblue;
+}
+.redes_sociales{
+  font-size: 50px;
+  color: aqua;
+
 }
 section {
   display: flex;
@@ -52,7 +57,7 @@ section {
 
 h1 {
   font-size: 2.5rem;
-  font-family: "Rubik Dirt", cursive;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: aliceblue;
 }
 .seccion-oscura {
@@ -66,7 +71,7 @@ h1 {
 .seccion-titulo {
   font-size: 2rem;
   padding: 15px 0;
-  font-family: "Rubik Dirt", cursive;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;  /*"Rubik Dirt", cursive*/
 }
 .seccion-descripcion {
   font-size: 1.2rem;
@@ -141,10 +146,6 @@ h1 {
   padding: 3px;
 }
 
-.espacio-arriba{
-  padding-top: 10px;
-}
-
 .letra{
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -152,6 +153,10 @@ h1 {
 .tamaño-img-habilidad{
   width: 130px;
   height: 130px;
+}
+
+.borde_abajo{
+  border-bottom: 2px solid green;
 }
 
 /* Estilos para los elementos del portafolio */
@@ -282,10 +287,6 @@ h1 {
 }
 
 @media screen and (max-width: 600px) {
-  .imagen_habilidades {
-    max-width: 150px;
-    max-height: 150px;
-  }
   .seccion-texto{
      font-size: 15px;
   }
