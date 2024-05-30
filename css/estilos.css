@@ -1,4 +1,4 @@
-@import '../node_modules/animate.css/animate.css';
+
 body {
   background: #000428; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -90,6 +90,10 @@ h1 {
 .texto-blanco {
   color: white;
 }
+.texto-modal{
+  font-size: 30px;
+  font-weight: bold;
+}
 
 /* seccion hero*/
 .hero {
@@ -123,10 +127,6 @@ h1 {
 #acerca:hover p {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-
-
-
-
 
 /* habilidades----------------------------------------------------------------------------------------------*/
 .carousel-inner img {
