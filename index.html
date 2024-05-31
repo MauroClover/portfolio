@@ -31,20 +31,40 @@
   </head>
   <body>
     <!--cv-->
-<div class="modal fade" id="cv" tabindex="-1" aria-labelledby="cvLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header bg-info">
-        <p class="text-white texto-modal" id="cv">Curriculum Vitae</p>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <img src="imagenes/ATS_english_page-0001.jpg" class=" img-fluid "></img>
-        <img src="imagenes/ATS_english_page-0002.jpg" class=" img-fluid "></img>
+    <div class="modal fade" id="cv" tabindex="-1" aria-labelledby="cvLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-info">
+            <p class="text-white texto-modal" id="cv">Hoja De Vida</p>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="d-inline-flex gap-1">
+              <a class="btn btn-primary btn-sm" data-bs-toggle="collapse" href="#collapseEnglish" role="button" aria-expanded="false" aria-controls="collapseEnglish">
+                Ingles
+              </a>
+              <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEspañol" aria-expanded="false" aria-controls="collapseEspañol">
+                Español
+              </button>
+            </p>
+            <div class="collapse" id="collapseEnglish">
+              <div class="card card-body">
+                <img src="imagenes/ATS_english_page-0001.jpg" class=" img-fluid "></img>
+                <img src="imagenes/ATS_english_page-0002.jpg" class=" img-fluid "></img>
+              </div>
+            </div>
+            <div class="collapse" id="collapseEspañol">
+              <div class="card card-body">
+                <img src="imagenes/ATS_hoja_vida_page-0001.jpg" class=" img-fluid "></img>
+                <img src="imagenes/ATS_hoja_vida_page-0002.jpg" class=" img-fluid "></img>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
     <!--barra de navegacion-->
     <div class="row">
       <div class="container">
@@ -69,16 +89,16 @@
                   <a class="nav-link active text-white a_hover" aria-current="page" href="#home">Home</a>
                 </li>
                 <li class="nav-item mt-2">
-                  <a class="nav-link text-warning a_hover" href="#about" >About me</a>
+                  <a class="nav-link text-warning a_hover" href="#about" >Sobre Mí</a>
                 </li>
                 <li class="nav-item mt-2">
-                  <a class="nav-link text-warning a_hover" href="#skills" >skills</a>
+                  <a class="nav-link text-warning a_hover" href="#skills" >Habilidades</a>
                 </li>
                 <li class="nav-item mt-2">
-                  <a class="nav-link text-warning a_hover" href="#proyectos">Proyects</a>
+                  <a class="nav-link text-warning a_hover" href="#proyectos">Proyectos</a>
                 </li>
                 <li class="nav-item mt-2">
-                  <a class="nav-link text-warning a_hover" href="#contact">Contact</a>
+                  <a class="nav-link text-warning a_hover" href="#contact">Contacto</a>
                 </li>
                 <li class="nav-item mt-2">
                   <a type="button" class="btn btn-outline-primary btn-sm"  data-bs-toggle="modal" data-bs-target="#cv">Ver CV</a>
@@ -93,20 +113,14 @@
 
     <!--seccion hero-->
     <section class="hero align-items-stretch" id="home">
-      <div
-        class="hero-principal d-flex flex-column justify-content-center align-items-center"
-      >
-        <img
-          class="hero-imagen-desarrollador"
-          src="./imagenes/desarrollador.jpg"
-          alt="foto de mauro clover"
-        />
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+        <img class="hero-imagen-desarrollador img-fluid" src="./imagenes/perfil_img.jpeg" alt="foto de mauro clover" />
         <h1>Hola, soy Mauro Paredes</h1>
         <h2>Desarrollo sitios y aplicaciones web a la medida del cliente.</h2>
       </div>
-      <div class="hero-inferior" id="about">
+      <div class="hero-inferior img-fluid" id="about">
         <img
-          class="hero-inferior-imagen img-fluid"
+          class="hero-inferior-imagen "
           src="./imagenes/imagen-inferior-2.jpg"
           alt="Monitor, laptop y logos de HTML, css, JavaScript y React."
         />
@@ -216,13 +230,13 @@
             </div>
 
             <div class=" col-sm-12 col-md-5 col-lg-3 text-center habilidad portfolio-item text-hover" style="margin-top: 20px;">
-              <p class="letra">Laravel, aprendiendo en estos momentos</p>
-              <img src="imagenes/laravel_img.png" class=" tamaño-img-habilidad"  alt="logo">
+              <p class="letra">WordPress</p>
+              <img src="imagenes/WordPress_img.png" class=" tamaño-img-habilidad"  alt="logo">
             </div>
 
             <div class=" col-sm-12 col-md-5 col-lg-3 text-center habilidad portfolio-item text-hover" style="margin-top: 20px;">
-              <p class="letra">WordPress</p>
-              <img src="imagenes/WordPress_img.png" class=" tamaño-img-habilidad"  alt="logo">
+              <p class="letra">Laravel, aprendiendo en estos momentos</p>
+              <img src="imagenes/laravel_img.png" class=" tamaño-img-habilidad"  alt="logo">
             </div>
 
           </div>
@@ -230,15 +244,15 @@
       </div>
     </div>
     <br><br>
-    <div class="container">
+    <div class="container" style="background-color: darkcyan; border-radius: 20px;">
       <h1 class="text-center">Analisis De Datos</h1>
-      <ul class="list-group">
+      <ul class="list-group" >
        <li class="list-group-item">• Identificación y documentación de requisitos funcionales y no funcionales para proyectos de software. </li>
        <li class="list-group-item">• Colaboración con clientes y equipos internos para comprender las necesidades del usuario final.</li>
        <li class="list-group-item">• Elaboración de casos de uso, historias de usuario, diagramas de flujo y otros artefactos de análisis.</li>
        <li class="list-group-item">• Facilitación de reuniones y talleres para definir y validar requisitos. </li>
        <li class="list-group-item">• Trabajo con equipos de desarrollo para garantizar la alineación entre los requisitos y la implementación del producto final. </li>
-     </ul>
+     </ul><br>
    </div><br><br>
 
     <!--seccion de proyectos-->
@@ -262,85 +276,85 @@
       <div class="container carusel">
         <div id="carouselProyecto" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner"  style=" border-radius: 30px;">
-            <div class="carousel-item active" data-bs-interval="2000">
+            <div class="carousel-item active" data-bs-interval="4000">
               <img src="imagenes/proyecto_1/Captura de pantalla (401).png" class=" img-fluid "  alt="sitio_web imagen">
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-item" data-bs-interval="4000">
               <img src="imagenes/proyecto_1/Captura de pantalla (402).png" class="img-fluid "  alt="sitio_web imagen">
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-item" data-bs-interval="4000">
               <img src="imagenes/proyecto_1/Captura de pantalla (403).png" class="img-fluid "  alt="sitio_web imagen">
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-item" data-bs-interval="4000">
               <img src="imagenes/proyecto_1/Captura de pantalla (377).png" class="img-fluid "  alt="sitio_web imagen">
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-item" data-bs-interval="4000">
               <img src="imagenes/proyecto_1/Captura de pantalla (378).png" class="img-fluid "  alt="sitio_web imagen">
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-item" data-bs-interval="4000">
               <img src="imagenes/proyecto_1/Captura de pantalla (379).png" class="img-fluid "  alt="sitio_web imagen">
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-item" data-bs-interval="4000">
               <img src="imagenes/proyecto_1/Captura de pantalla (380).png" class="img-fluid "  alt="sitio_web imagen">
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-item" data-bs-interval="4000">
               <img src="imagenes/proyecto_1/Captura de pantalla (381).png" class="img-fluid "  alt="sitio_web imagen">
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-item" data-bs-interval="4000">
               <img src="imagenes/proyecto_1/Captura de pantalla (382).png" class="img-fluid "  alt="sitio_web imagen">
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-item" data-bs-interval="4000">
               <img src="imagenes/proyecto_1/Captura de pantalla (383).png" class="img-fluid "  alt="sitio_web imagen">
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-item" data-bs-interval="4000">
               <img src="imagenes/proyecto_1/Captura de pantalla (384).png" class="img-fluid "  alt="sitio_web imagen">
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-item" data-bs-interval="4000">
               <img src="imagenes/proyecto_1/Captura de pantalla (385).png" class="img-fluid "  alt="sitio_web imagen">
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-item" data-bs-interval="4000">
               <img src="imagenes/proyecto_1/Captura de pantalla (386).png" class="img-fluid "  alt="sitio_web imagen">
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-item" data-bs-interval="4000">
               <img src="imagenes/proyecto_1/Captura de pantalla (387).png" class="img-fluid "  alt="sitio_web imagen">
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-item" data-bs-interval="4000">
               <img src="imagenes/proyecto_1/Captura de pantalla (388).png" class="img-fluid "  alt="sitio_web imagen">
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-item" data-bs-interval="4000">
               <img src="imagenes/proyecto_1/Captura de pantalla (389).png" class="img-fluid "  alt="sitio_web imagen">
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-item" data-bs-interval="4000">
               <img src="imagenes/proyecto_1/Captura de pantalla (390).png" class="img-fluid "  alt="sitio_web imagen">
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-item" data-bs-interval="4000">
               <img src="imagenes/proyecto_1/Captura de pantalla (391).png" class="img-fluid "  alt="sitio_web imagen">
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-item" data-bs-interval="4000">
               <img src="imagenes/proyecto_1/Captura de pantalla (392).png" class="img-fluid "  alt="sitio_web imagen">
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-item" data-bs-interval="4000">
               <img src="imagenes/proyecto_1/Captura de pantalla (393).png" class="img-fluid "  alt="sitio_web imagen">
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-item" data-bs-interval="4000">
               <img src="imagenes/proyecto_1/Captura de pantalla (394).png" class="img-fluid "  alt="sitio_web imagen">
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-item" data-bs-interval="4000">
               <img src="imagenes/proyecto_1/Captura de pantalla (395).png" class="img-fluid "  alt="sitio_web imagen">
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-item" data-bs-interval="4000">
               <img src="imagenes/proyecto_1/Captura de pantalla (396).png" class="img-fluid "  alt="sitio_web imagen">
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-item" data-bs-interval="4000">
               <img src="imagenes/proyecto_1/Captura de pantalla (397).png" class="img-fluid "  alt="sitio_web imagen">
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-item" data-bs-interval="4000">
               <img src="imagenes/proyecto_1/Captura de pantalla (398).png" class="img-fluid "  alt="sitio_web imagen">
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-item" data-bs-interval="4000">
               <img src="imagenes/proyecto_1/Captura de pantalla (399).png" class="img-fluid "  alt="sitio_web imagen">
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-item" data-bs-interval="4000">
               <img src="imagenes/proyecto_1/Captura de pantalla (400).png" class="img-fluid "  alt="sitio_web imagen">
             </div>
           </div>
@@ -372,70 +386,70 @@
         <div class="container carusel"> 
           <div id="carouselProyecto_2" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner"  style=" border-radius: 30px;">
-              <div class="carousel-item active" data-bs-interval="2000">
+              <div class="carousel-item active" data-bs-interval="5000">
                 <img src="imagenes/proyecto_2/Captura de pantalla (404).png" class=" img-fluid "  alt="sitio_web imagen">
               </div>
-              <div class="carousel-item" data-bs-interval="2000">
+              <div class="carousel-item" data-bs-interval="5000">
                 <img src="imagenes/proyecto_2/Captura de pantalla (405).png" class="img-fluid "  alt="sitio_web imagen">
               </div>
-              <div class="carousel-item" data-bs-interval="2000">
+              <div class="carousel-item" data-bs-interval="5000">
                 <img src="imagenes/proyecto_2/Captura de pantalla (406).png" class="img-fluid "  alt="sitio_web imagen">
               </div>
-              <div class="carousel-item" data-bs-interval="2000">
+              <div class="carousel-item" data-bs-interval="5000">
                 <img src="imagenes/proyecto_2/Captura de pantalla (407).png" class="img-fluid "  alt="sitio_web imagen">
               </div>
-              <div class="carousel-item" data-bs-interval="2000">
+              <div class="carousel-item" data-bs-interval="5000">
                 <img src="imagenes/proyecto_2/Captura de pantalla (408).png" class="img-fluid "  alt="sitio_web imagen">
               </div>
-              <div class="carousel-item" data-bs-interval="2000">
+              <div class="carousel-item" data-bs-interval="5000">
                 <img src="imagenes/proyecto_2/Captura de pantalla (409).png" class="img-fluid "  alt="sitio_web imagen">
               </div>
-              <div class="carousel-item" data-bs-interval="2000">
+              <div class="carousel-item" data-bs-interval="5000">
                 <img src="imagenes/proyecto_2/Captura de pantalla (410).png" class="img-fluid "  alt="sitio_web imagen">
               </div>
-              <div class="carousel-item" data-bs-interval="2000">
+              <div class="carousel-item" data-bs-interval="5000">
                 <img src="imagenes/proyecto_2/Captura de pantalla (411).png" class="img-fluid "  alt="sitio_web imagen">
               </div>
-              <div class="carousel-item" data-bs-interval="2000">
+              <div class="carousel-item" data-bs-interval="5000">
                 <img src="imagenes/proyecto_2/Captura de pantalla (412).png" class="img-fluid "  alt="sitio_web imagen">
               </div>
-              <div class="carousel-item" data-bs-interval="2000">
+              <div class="carousel-item" data-bs-interval="5000">
                 <img src="imagenes/proyecto_2/Captura de pantalla (413).png" class="img-fluid "  alt="sitio_web imagen">
               </div>
-              <div class="carousel-item" data-bs-interval="2000">
+              <div class="carousel-item" data-bs-interval="5000">
                 <img src="imagenes/proyecto_2/Captura de pantalla (414).png" class="img-fluid "  alt="sitio_web imagen">
               </div>
-              <div class="carousel-item" data-bs-interval="2000">
+              <div class="carousel-item" data-bs-interval="5000">
                 <img src="imagenes/proyecto_2/Captura de pantalla (415).png" class="img-fluid "  alt="sitio_web imagen">
               </div>
-              <div class="carousel-item" data-bs-interval="2000">
+              <div class="carousel-item" data-bs-interval="5000">
                 <img src="imagenes/proyecto_2/Captura de pantalla (416).png" class="img-fluid "  alt="sitio_web imagen">
               </div>
-              <div class="carousel-item" data-bs-interval="2000">
+              <div class="carousel-item" data-bs-interval="5000">
                 <img src="imagenes/proyecto_2/Captura de pantalla (417).png" class="img-fluid "  alt="sitio_web imagen">
               </div>
-              <div class="carousel-item" data-bs-interval="2000">
+              <div class="carousel-item" data-bs-interval="5000">
                 <img src="imagenes/proyecto_2/Captura de pantalla (418).png" class="img-fluid "  alt="sitio_web imagen">
               </div>
-              <div class="carousel-item" data-bs-interval="2000">
+              <div class="carousel-item" data-bs-interval="5000">
                 <img src="imagenes/proyecto_2/Captura de pantalla (419).png" class="img-fluid "  alt="sitio_web imagen">
               </div>
-              <div class="carousel-item" data-bs-interval="2000">
+              <div class="carousel-item" data-bs-interval="5000">
                 <img src="imagenes/proyecto_2/Captura de pantalla (420).png" class="img-fluid "  alt="sitio_web imagen">
               </div>
-              <div class="carousel-item" data-bs-interval="2000">
+              <div class="carousel-item" data-bs-interval="5000">
                 <img src="imagenes/proyecto_2/Captura de pantalla (421).png" class="img-fluid "  alt="sitio_web imagen">
               </div>
-              <div class="carousel-item" data-bs-interval="2000">
+              <div class="carousel-item" data-bs-interval="5000">
                 <img src="imagenes/proyecto_2/Captura de pantalla (422).png" class="img-fluid "  alt="sitio_web imagen">
               </div>
-              <div class="carousel-item" data-bs-interval="2000">
+              <div class="carousel-item" data-bs-interval="5000">
                 <img src="imagenes/proyecto_2/Captura de pantalla (423).png" class="img-fluid "  alt="sitio_web imagen">
               </div>
-              <div class="carousel-item" data-bs-interval="2000">
+              <div class="carousel-item" data-bs-interval="5000">
                 <img src="imagenes/proyecto_2/Captura de pantalla (424).png" class="img-fluid "  alt="sitio_web imagen">
               </div>
-              <div class="carousel-item" data-bs-interval="2000">
+              <div class="carousel-item" data-bs-interval="5000">
                 <img src="imagenes/proyecto_2/Captura de pantalla (425).png" class="img-fluid "  alt="sitio_web imagen">
               </div>
             </div>
