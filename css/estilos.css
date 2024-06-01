@@ -114,6 +114,10 @@ h1 {
   font-size: 1.5rem;
   color: white;
 }
+.img-hero{
+  width: 400px;
+  height: 200px;
+}
 
 /* seccion sobre mi*/
 .sobre-mi {
@@ -280,9 +284,10 @@ h1 {
 }
 
 /*adaptable responsivo*/
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 700px) {
   .hero-inferior-imagen {
-    max-width: 600px;
+    width: 250px;
+    height: 150px;
   }
 }
 
